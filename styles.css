@@ -484,3 +484,65 @@ img {
     width: 450px;
   }
 }
+.slider {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+.sliderImage {
+  display: none;
+  width: 100%;
+}
+
+.sliderImage.active {
+  display: block;
+}
+
+/* Styles for the certificates images section */
+.certificates-images {
+  display: flex;
+  flex-direction: column; /* Stacks images vertically */
+  gap: 15px; /* Space between images */
+  align-items: flex-start; /* Align images to the left */
+}
+
+.certificate-img {
+  width: 150px; /* Adjust the width of the images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for images */
+.certificate-img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
